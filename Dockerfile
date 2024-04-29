@@ -6,8 +6,7 @@ ENV PIP_NO_CACHE_DIR=1 \
     PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1
 
-RUN apt update && apt install libcairo2 git build-essential -y --no-install-recommends
-RUN rm -rf /var/lib/apt/lists /var/cache/apt/archives /tmp/*
+RUN apt update && apt install -y --no-install-recommends libcairo2 git build-essential && rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*
 
 RUN mkdir /data
 
