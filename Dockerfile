@@ -14,5 +14,5 @@ RUN git clone https://github.com/IlllaP/Hikka .
 RUN pip install --no-warn-script-location --no-cache-dir -U -r requirements.txt
 
 EXPOSE 8080
-
+RUN mkdir /data
 CMD python -m hikka
