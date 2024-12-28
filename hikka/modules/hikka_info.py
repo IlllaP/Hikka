@@ -26,7 +26,7 @@ class HikkaInfoMod(loader.Module):
             ),
             loader.ConfigValue(
                 "custom_button",
-                ["🔥 My channel ", "https://t.me/RZoffC"],
+                ["🔥 Channel ", "https://t.me/RZoffC"],
                 lambda: self.strings("_cfg_cst_btn"),
                 validator=loader.validators.Union(
                     loader.validators.Series(fixed_len=2),
@@ -35,7 +35,7 @@ class HikkaInfoMod(loader.Module):
             ),
             loader.ConfigValue(
                 "banner_url",
-                "https://github.com/Illlap/assets/raw/master/hikka_banner.mp4",
+                "https://x0.at/ZLS1.MP4",
                 lambda: self.strings("_cfg_banner"),
                 validator=loader.validators.Link(),
             ),
